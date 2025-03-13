@@ -1,0 +1,199 @@
+/* Header */
+.Header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: #800000; /* Maroon background */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+/* Logo and Name Section */
+.first {
+    
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-color: #800000;
+    padding: 1em;
+    flex-wrap: nowrap;
+    justify-content: space-between; /* Space between logo and hamburger */
+    width: 100%;
+    max-width: 1200px; /* Limit width for larger screens */
+}
+
+.limg {
+    margin-right: 1em;
+    border-radius: 50%;
+    height: 100px; /* Fixed height for logo */
+    width: 100px; /* Fixed width for logo */
+    object-fit: cover;
+}
+
+.first h1 {
+    font-size: 2.9em;
+    color:white;
+    font-family: "IBM Plex Sans", serif;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1rem;
+    margin-left: 50px; /* Remove default margin */
+}
+
+.first h1 span {
+    margin-left: 0;
+}
+
+.first p {
+    color: white;
+    font-size: 1.5em;
+    margin: 0;
+    font-style: italic;
+    text-align: center;
+    flex-grow: 1; /* Allow tagline to take available space */
+    margin-bottom:-60px;
+    margin-left: -90px;
+
+}
+
+/* Navigation Bar */
+.second {
+    
+    height: auto;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.Bar {
+    display: flex;
+    font-size: 1rem;
+    margin: 1rem 2rem;
+    padding: 0;
+    cursor: pointer;
+}
+
+.Bar a {
+    padding: 0.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.Bar a:hover {
+    background-color: white;
+    color: black;
+    border-radius: 0.7rem;
+}
+
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: auto; /* Push hamburger to the right */
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white; /* White lines for better contrast */
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .first {
+        padding: 0.5em; /* Reduced padding */
+    }
+
+    .first h1 {
+        font-size: 1.5em; /* Adjusted font size */
+        gap: 0.3rem; /* Reduced gap */
+    }
+
+    .first p {
+        font-size: 1em; /* Adjusted font size */
+    }
+
+    .limg {
+        height: 60px; /* Adjusted height for logo */
+        width: 60px; /* Adjusted width for logo */
+    }
+
+    .hamburger {
+        display: flex; /* Show hamburger icon */
+    }
+
+    .second {
+        display: none; /* Hide navigation links by default */
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9); /* Semi-transparent black */
+    }
+
+    .second.active {
+        display: flex; /* Show navigation links when active */
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Bar {
+        margin: 0.5rem 0;
+    }
+
+    .Bar a {
+        font-size: 1rem; /* Adjusted font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .first{
+        height: 70px;
+        padding:0.5rem;
+    }
+    .limg {
+        height: 60px;
+        width: 60px;
+        margin-top: -5px;
+        
+    }
+
+    .first h1 {
+        font-size: 1.4em;
+        margin-left: -3px;
+        margin-top: -1px;
+    }
+    .first p {
+        font-size: 0.6rem; /* Further reduce tagline font size */
+        margin-top: -10px;
+        margin-left: -160px;
+        font-weight: bold;
+        color: white;
+    }
+    .hamburger{
+        display: flex;
+        margin-top: -65px;
+        margin-right: 6px;
+    }
+
+
+}

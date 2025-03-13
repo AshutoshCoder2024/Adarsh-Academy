@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.slider-container {
+    margin-top: 70px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-wrapper {
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+    max-height: 700px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.slider-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 18px;
+    transition: background 0.3s ease, opacity 0.3s ease;
+    opacity: 0.7;
+}
+
+.slider-arrow.prev {
+    left: 10px;
+}
+
+.slider-arrow.next {
+    right: 10px;
+}
+
+.slider-arrow:hover {
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+}
+
+/* Navigation Dots Styles */
+.slider-nav {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.slider-nav .nav-dot {
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+
+.slider-nav .nav-dot.active {
+    background: red;
+    transform: scale(1.2);
+}
+
+/* RESPONSIVE STYLES */
+@media (max-width: 768px) {
+    .slider img {
+        max-height: 400px;
+    }
+
+    .slider-arrow {
+        padding: 8px 16px;
+        font-size: 16px;
+    }
+
+    .slider-nav {
+        bottom: 10px;
+        gap: 8px;
+    }
+
+    .slider-nav .nav-dot {
+        width: 8px;
+        height: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    .slider img {
+        max-height: 300px;
+    }
+
+    .slider-arrow {
+        padding: 6px 12px;
+        font-size: 14px;
+    }
+
+    .slider-nav {
+        bottom: 5px;
+        gap: 6px;
+    }
+
+    .slider-nav .nav-dot {
+        width: 6px;
+        height: 6px;
+    }
+}

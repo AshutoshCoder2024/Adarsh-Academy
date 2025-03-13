@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and borders in element size */
+}
+
+/* Header Styling */
+.Header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #800000; /* Consistent background color */
+}
+
+/* Header Content */
+.first {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em;
+    gap: 1rem;
+}
+
+.limg {
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+}
+
+.first h1 {
+    font-size: 2.5em;
+    color: white;
+    font-family: "IBM Plex Sans", serif;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/* Navigation Bar */
+.second {
+    background-color: black;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+.Bar {
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.Bar a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.Bar:hover {
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+}
+
+.Bar a:hover {
+    color: black;
+}
+
+/* Hamburger Menu */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 200;
+}
+
+.bar {
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+    border-radius: 5px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 768px) {
+    .first {
+        flex-wrap: wrap; /* Allow wrapping for better alignment */
+        justify-content: center;
+        text-align: center;
+    }
+
+    .limg {
+        height: 80px;
+        width: 80px;
+    }
+
+    .first h1 {
+        font-size: 2em;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: black;
+        z-index: 10;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .Bar {
+        margin: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .Bar a {
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .limg {
+        height: 60px;
+        width: 60px;
+    }
+
+    .first h1 {
+        font-size: 1.5em;
+    }
+}
+

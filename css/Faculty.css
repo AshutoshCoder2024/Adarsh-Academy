@@ -1,0 +1,188 @@
+
+.faculty-section {
+    scroll-margin-top: 200px;
+    font-family: Arial, sans-serif;
+    background-color:#121212; 
+    color: #e4e4eb; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.faculty-heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 15px 0;
+    /* border-bottom: 5px solid #810303;  */
+    position: relative;
+    color: #ffffff;
+}
+
+
+.faculty-heading:hover {
+    text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Card Container */
+.faculty-card-container {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Individual Faculty Cards */
+.faculty-card {
+    background-color: #1e1e2f; /* Dark gray background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin: 2rem;
+    gap: 100px;
+}
+
+/* Hover effect for cards */
+.faculty-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+    background: linear-gradient(135deg, #9b1c1c, #1e1e2f); /* Dark red gradient */
+}
+
+/* Card Header (Image and Name) */
+.card-header {
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    height: 200px;
+}
+
+.card-header img {
+    width: 8rem; /* Increased size */
+    height: 8rem;
+    border-radius: 50%;
+    border: 0.rem solid #9b1c1c; /* Dark red border */
+    position: absolute;
+    top: 10px; /* Position adjusted */
+    left: 50%;
+    transform: translateX(-50%);
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.card-header h2 {
+    margin: 150px 0 5px; /* Increased top margin to create space below the image */
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+
+.card-header p {
+    margin: 0;
+    font-size: 1rem;
+    color: #6c757d; /* Muted gray for subtle contrast */
+}
+
+/* Card Body */
+.card-body {
+    margin-top:1rem;
+    padding: 30px;
+    background-color: #2a2a3f;
+}
+
+.card-body p {
+    margin: 10px 0;
+    color: #a8b0d0; /* Soft pastel for readability */
+}
+
+.card-body .experience {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+/* Optional Gradient Hover Effect */
+.faculty-card:hover {
+    background: linear-gradient(135deg, #9b1c1c, #1e1e2f); /* Dark red gradient on hover */
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
+}
+
+/* Responsive Design Enhancements */
+@media (max-width: 1024px) {
+    .faculty-card-container {
+        justify-content: space-around;
+    }
+    .faculty-card {
+        width: 80%; /* Adjust card width */
+        margin: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .faculty-heading {
+        font-size: 2.5rem; /* Smaller heading for tablets */
+        padding: 10px 0;
+    }
+    .card-header img {
+        width: 6rem; /* Smaller image size for tablets */
+        height: 6rem;
+        margin-bottom: 100px;
+    }
+    .card-header h2 {
+        margin: 100px 0 5px; /* Adjust for smaller screen */
+    }
+    .card-body {
+        padding: 20px; /* Reduced padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .faculty-heading {
+        font-size: 2rem; /* Smaller heading for phones */
+        letter-spacing: 2px; /* Reduced spacing */
+    }
+    .faculty-card {
+        width: 90%; /* Full width for phones */
+        margin: 1rem 0;
+    }
+    .card-header img {
+        width: 7rem; /* Smaller image for phones */
+        height: 7rem;
+        /* margin-bottom: 100px; */
+    }
+    .card-header h2 {
+        margin: 80px 0 5px; /* Adjust for smaller screens */
+        margin-top: 125px;
+    }
+    .card-header p{
+        margin-top: 10px;
+    }
+    .faculty-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-body{
+        margin-bottom: -20px;
+    }
+}
