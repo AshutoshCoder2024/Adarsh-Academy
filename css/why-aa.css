@@ -23,16 +23,17 @@
 .features {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: center;
+    gap: 50px;
     margin-top: 20px;
 }
 .feature {
     background: #1a1a1a;
     padding: 20px;  
     border-radius: 8px;
-    width: 18%;  
+    width: 300px;  
     text-align: center;
+    border: 1px solid #333;
     transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  */
 }

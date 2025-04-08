@@ -8,7 +8,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 /* Logo and Name Section */
@@ -26,21 +25,21 @@
 }
 
 .limg {
-    margin-right: 1em;
+    margin-right: 2em;
     border-radius: 50%;
-    height: 100px; /* Fixed height for logo */
-    width: 100px; /* Fixed width for logo */
+    height: 80px; /* Fixed height for logo */
+    width: 80px; /* Fixed width for logo */
     object-fit: cover;
 }
 
 .first h1 {
-    font-size: 2.9em;
+    font-size: 2.5rem;
     color:white;
     font-family: "IBM Plex Sans", serif;
     display: flex;
     flex-wrap: nowrap;
-    gap: 1rem;
-    margin-left: 50px; /* Remove default margin */
+    gap: 2rem;
+    margin-left: 70px; /* Remove default margin */
 }
 
 .first h1 span {
@@ -49,12 +48,12 @@
 
 .first p {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.3em;
     margin: 0;
     font-style: italic;
     text-align: center;
     flex-grow: 1; /* Allow tagline to take available space */
-    margin-bottom:-60px;
+    margin-bottom:-40px;
     margin-left: -90px;
 
 }
@@ -87,7 +86,7 @@
 }
 
 .Bar a {
-    padding: 0.5rem;
+    padding: 0.4rem;
     color: white;
     font-weight: bold;
     font-size: 1.5rem;

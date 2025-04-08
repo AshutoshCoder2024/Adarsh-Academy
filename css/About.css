@@ -32,19 +32,26 @@
     color: #ffffff; 
 }
 .highlights {
+    width: 100%;
+    gap: 10px;
     display: flex;
-    justify-content: space-between;
-    margin: 40px 0;
-    gap: 20px;
+    justify-content: center;
+    margin: 50px 0;
+    gap: 50px;
+    flex-wrap: wrap;   
 }
 
 .highlight-item {
     background: #1a1a1a; 
     padding: 20px;
+    overflow: hidden;
+    width: 300px;
     border-radius: 10px;
     text-align: center;
+    justify-content: center;
     box-shadow: 0px 4px 15px ;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #333;
 }   
 .highlight-item:hover {
     transform: translateY(-10px);
@@ -64,6 +71,7 @@
 }
 
 .highlight-item p {
+    font-size:1rem ;
     color: #ffffff;
     
 }
@@ -73,6 +81,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     color: #e60000;
+    margin-top: 30px;
     margin-bottom: 5px;
 }
 
@@ -136,7 +145,7 @@
     }
 
     .highlights {
-        flex-direction: column;
+        /* flex-direction: column; */
         gap: 20px;
     }
 
