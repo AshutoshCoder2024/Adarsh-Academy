@@ -23,18 +23,19 @@
 .courses-card-container {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
     flex-wrap: wrap;
     margin-top: 20px;
 }
 
 /* Individual Course Cards */
 .course-card {
+    
     background-color: #1c1c1c; /* Dark charcoal background for course cards */
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
     padding: 20px;
-    width: 250px;
+    width: 300px;
     text-align: center;
    /* margin: 50px; */
     transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
@@ -43,6 +44,7 @@
     border: 1px solid #333; /* Slightly darker border */
     opacity: 0; /* Initially hidden for animation */
     animation: fadeInUp 0.8s ease-out forwards; /* Fade-in and scale-up animation */
+   
 }
 
 /* Fade-in and Scale-up Animation */
@@ -98,6 +100,20 @@
     transform: translateY(-2px);
 }
 
+
+@media (max-width: 1024px) {
+    .courses-card-container {
+        gap: 30px; /* Reduce gap between items on smaller screens */
+    }
+    .course-card {
+        width: 90%; /* Adjust width to fit within the row on smaller screens */
+        animation: fadeInUp 0.8s ease-out forwards; /* Fade-in and scale-up for mobile */
+    }
+    .course-card p{
+        font-size: 16px;
+    }
+    
+}
 /* Responsive Design */
 @media (max-width: 768px) {
     .courses-section {

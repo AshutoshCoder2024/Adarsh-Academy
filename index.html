@@ -15,12 +15,11 @@
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/footer.css">
     <!-- Link to Font Awesome Icons for Social Media -->
-
-    <head>
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    </head>
-
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body style="color: black; 
@@ -70,7 +69,7 @@ font-family: 'Inter', sans-serif;  ">
     <main>
         <!-- img slider  -->
         <section class="slider-container" id="link-imageslider">
-            <div class="slider-wrapper">
+            <div class="slider-wrapper" >
                 <div class="slider">
                     <img id="slider2" class="aaimg" src="./Images/Main-img/ssliderimg/aaimg2.jpg" alt="Image 2" />
                     <img id="slider3" class="aaimg" src="./Images/Main-img/ssliderimg/aaimg3.jpg" alt="Image 3" />
@@ -105,7 +104,7 @@ font-family: 'Inter', sans-serif;  ">
                     and grow holistically.
                     Join us and take the first step toward your bright future.
                 </p>
-                <div class="highlights">
+                <div class="highlights" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <div class="highlight-item">
                         <div class="icon">🧠</div>
                         <h3>Expert Faculty</h3>
@@ -138,9 +137,9 @@ font-family: 'Inter', sans-serif;  ">
         <!-- why adarsh academy  -->
         <section class="why-section">
             <h2 class="why-heading">
-                WHY <span class="highlight">ADARSH ACADEMY ?</span>
+                WHY <span class="why-highlight">ADARSH ACADEMY ?</span>
             </h2>
-            <div class="features">
+            <div class="features" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <div class="feature">
                     <div class="feature-icon">
                         <img src="./Images/Main-img/whyaa/teacher.png" alt="Highly Skilled and Experienced Educators" />
@@ -162,7 +161,7 @@ font-family: 'Inter', sans-serif;  ">
                     </div>
                     <p class="feature-text">One-to-One Doubts: Clear instantly with personal help</p>
                 </div>
-                
+
                 <div class="feature">
                     <div class="feature-icon">
                         <img src="./Images/Main-img/whyaa/results.png"
@@ -181,12 +180,12 @@ font-family: 'Inter', sans-serif;  ">
                 <h1>Explore Our Courses</h1>
                 <p>Designed for Class 11 & 12 Students | Comprehensive Preparation for JEE Mains, IIT, & NEET Exams</p>
             </div>
-            <div class="courses-card-container">
+            <div class="courses-card-container" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <!-- Physics Card -->
                 <div class="course-card">
                     <h2>Physics</h2>
                     <p>Class: 11 & 12</p>
-                    <p>Focus: JEE Mains | IIT Preparation | Neet  </p>
+                    <p>Focus: JEE Mains | IIT Preparation | Neet </p>
                     <a href="https://www.youtube.com/@AdarshAcademy-4545#" target="_blank" class="button">Learn More</a>
                 </div>
                 <!-- Chemistry Card -->
@@ -205,8 +204,8 @@ font-family: 'Inter', sans-serif;  ">
                     <a href="https://www.youtube.com/@AdarshAcademy-4545/playlists" target="_blank" class="button">Learn
                         More</a>
                 </div>
-                 <!-- Biology card -->
-                 <div class="course-card">
+                <!-- Biology card -->
+                <div class="course-card">
                     <h2>Biology</h2>
                     <p>Class: 11 & 12</p>
                     <p>Focus: JEE Mains | IIT Preparation | Neet </p>
@@ -218,7 +217,7 @@ font-family: 'Inter', sans-serif;  ">
         <!-- Faculty Section -->
         <section id="link-faculty" class="faculty-section">
             <h1 class="faculty-heading">Our Faculty</h1>
-            <div class="faculty-card-container">
+            <div class="faculty-card-container" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <!-- Mathematics Teacher Card -->
                 <div class="faculty-card">
                     <div class="card-header">
@@ -232,7 +231,7 @@ font-family: 'Inter', sans-serif;  ">
                         <p>Mathematics is not just numbers; it's the universal language of the universe.</p>
                     </div>
                 </div>
-                
+
                 <!-- Chemistry Teacher Card -->
                 <div class="faculty-card">
                     <div class="card-header">
@@ -275,7 +274,7 @@ font-family: 'Inter', sans-serif;  ">
 
         <!-- Contact Us Section -->
         <section id="link-contact" class="contact-section">
-            <div class="container">
+            <div class="container" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <h2>Contact Us</h2>
                 <h3 class="sub-heading">We'd Love to Hear From You</h3>
 
@@ -382,6 +381,11 @@ font-family: 'Inter', sans-serif;  ">
 
     <script src="./img-slider.js"></script>
     <script src="nav.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
