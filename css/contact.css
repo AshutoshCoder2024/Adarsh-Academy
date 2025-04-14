@@ -1,5 +1,5 @@
 .contact-section {
-  scroll-margin-top: 160px;
+  scroll-margin-top: 90px;
   background-color: #121212; 
   color: #f1f1f1; 
   padding: 50px 0;
@@ -175,5 +175,27 @@ h2 {
 
   .map iframe {
     height: 300px; /* Reduced height for smaller screens */
+  }
+}
+@media (max-width: 480px) {
+  .contact-section {
+    
+      scroll-margin-top: 70px;
+  }
+  h2 {
+    font-size: 2rem; /* Smaller heading for mobile */
+  }
+
+  .sub-heading {
+    font-size: 1.2rem; /* Smaller subheading for mobile */
+  }
+
+  .contact-form-wrapper,
+  .contact-info-wrapper {
+    padding: 15px; /* Reduced padding for mobile */
+  }
+
+  .submit-btn {
+    padding: 10px; /* Smaller button padding for mobile */
   }
 }

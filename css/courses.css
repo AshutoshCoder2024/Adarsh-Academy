@@ -1,5 +1,5 @@
 .courses-section {
-    scroll-margin-top: 170px;
+    scroll-margin-top: 90px;
     background-color: #121212; 
     color: #ffffff; 
     padding: 50px 20px;
@@ -76,6 +76,11 @@
     margin-bottom: 10px;
 }
 
+.course-card h2  img{
+    color: red;
+    width: 50px;
+     
+}
 /* Course Card Description */
 .course-card p {
     font-size: 1rem;

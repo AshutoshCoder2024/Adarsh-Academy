@@ -4,16 +4,50 @@
     box-sizing: border-box;
 }
 html{
-    scroll-behavior:smooth  
+    scroll-behavior:auto;
   
 }
 main{
     position: fi;
-    
+    background-color:#121212; 
 
 }
 
 body{
     line-height: inherit;
     margin: 0;
+}
+/* Body and Header Styling */
+body {
+    background-color: #121212;
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e1e1e;  /* Dark track */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #800000;  /* Maroon thumb */
+    border-radius: 5px;
+    border: 2px solid #121212;  /* Border to blend with background */
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #800000 #1e1e1e;
+}
+.sub-iocns{
+    color: #800000; /* Maroon color for icons */
+    font-size: 1.5rem; /* Adjust size as needed */
+    margin-right: 10px; /* Space between icon and text */
 }

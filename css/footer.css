@@ -40,7 +40,7 @@ footer a:hover {
     font-weight: bold;
     margin-bottom: 18px;
     letter-spacing: 1px; 
-    color: #ff4b5c;
+    color: #e60000;
 }
 
 .quick-links a {
@@ -58,7 +58,7 @@ footer a:hover {
     font-weight: bold;
     margin-bottom: 15px;
     letter-spacing: 1px;
-    color: #ff4b5c; 
+    color: #e60000;
 }
 
 .social-media a {
@@ -69,8 +69,8 @@ footer a:hover {
 }
 
 .social-media a:hover {
-    color: #ff4b5c;
-    transform: scale(1.1); /* Slightly larger scale on hover */
+    color: #e60000;
+    transform: scale(2); 
 }
 
 /* Copyright Section */
@@ -88,7 +88,7 @@ footer a:hover {
 }
 
 .copyright a {
-    color: #ff4b5c;
+    color: #e60000;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -104,7 +104,7 @@ footer a:hover {
 }
 
 .contact-info a {
-    color: #ff4b5c; /* Highlight color for links */
+    color: #e60000;
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -118,7 +118,7 @@ footer a:hover {
     line-height: 1.6;
 }
 .developer-name{
-    color: #ff4b5c;
+    color: #e60000;
 }
 
 /* Responsive Design */

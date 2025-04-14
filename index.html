@@ -22,49 +22,41 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
+
 <body style="color: black; 
 font-family: 'Inter', sans-serif;  ">
     <header id="link-home">
-        <section class="Header" ">
-            <!-- Logo and Name -->
+        <section class="Header">
+            <!-- Left Side: Logo and Name -->
             <div class="first">
                 <img src="./Images/header-img/logo.jpg" class="limg" alt="Adarsh Academy" />
-                <h1><span>ADARSH </span> <span> ACADEMY</span></h1>
-                <p class="">~ let's Start From Zero To Reach Infinity</p>
+                <div class="title-tagline">
+                    <h1><span>ADARSH</span> <span>ACADEMY</span></h1>
+                    <p>~ let's Start From Zero To Reach Infinity</p>
+                </div>
             </div>
-
+    
+            <!-- Navigation Links -->
+            <nav class="second" id="nav-links">
+                <ul class="nav-list">
+                    <li class="Bar"><a href="#link-home">Home</a></li>
+                    <li class="Bar"><a href="#link-about">About us</a></li>
+                    <li class="Bar"><a href="#link-courses">Courses</a></li>
+                    <li class="Bar"><a href="#link-faculty">Faculty</a></li>
+                    <li class="Bar"><a href="#link-contact">Contact us</a></li>
+                </ul>
+            </nav>
+    
             <!-- Hamburger Icon -->
             <div class="hamburger" id="hamburger" aria-controls="nav-links" aria-expanded="false">
                 <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
-
-            <!-- Navigation Bar -->
-            <div class="second" id="nav-links">
-                <ul class="nav-list" style="list-style-type: none">
-                    <li class="Bar">
-                        <a href="#link-home">Home</a>
-                    </li>
-                    
-                    <li class="Bar">
-                        <a href="#link-about">About us</a>
-                    </li>
-
-                    <li class="Bar">
-                        <a href="#link-courses">Courses</a>
-                    </li>
-
-                    <li class="Bar">
-                        <a href="#link-faculty">Faculty</a>
-                    </li>
-                    <li class="Bar">
-                        <a href="#link-contact">Contact us</a>
-                    </li>
-                </ul>
-            </div>
         </section>
     </header>
+    
+    
 
     <!-- main -->
     <main>
@@ -73,7 +65,7 @@ font-family: 'Inter', sans-serif;  ">
             <div class="slider-wrapper" >
                 <div class="slider">
                     <img id="slider2" class="aaimg" src="./Images/Main-img/ssliderimg/aaimg2.jpg" alt="Image 2" />
-                    <img id="slider3" class="aaimg" src="./Images/Main-img/ssliderimg/aaimg3.jpg" alt="Image 3" />
+                    <!-- <img id="slider3" class="aaimg" src="./Images/Main-img/ssliderimg/aaimg3.jpg" alt="Image 3" /> -->
                     <img id="slider4" class="aaimg" src="./Images/Main-img/ssliderimg/aaimg4.jpg" alt="Image 4" />
                     <img id="slider5" class="aaimg" src="./Images/Main-img/ssliderimg/aaimg5.jpg" alt="Image 5" />
                     <img id="slider6" class="aaimg" src="./Images/Main-img/ssliderimg/aaimg6.jpg" alt="Image 6" />
@@ -86,9 +78,9 @@ font-family: 'Inter', sans-serif;  ">
                     <button data-index="0" class="nav-dot active" aria-label="Slide 1"></button>
                     <button data-index="1" class="nav-dot" aria-label="Slide 2"></button>
                     <button data-index="2" class="nav-dot" aria-label="Slide 3"></button>
-                    <button data-index="3" class="nav-dot" aria-label="Slide 4"></button>
+                    <!-- <button data-index="3" class="nav-dot" aria-label="Slide 4"></button>
                     <button data-index="4" class="nav-dot" aria-label="Slide 5"></button>
-                    <button data-index="5" class="nav-dot" aria-label="Slide 6"></button>
+                    <button data-index="5" class="nav-dot" aria-label="Slide 6"></button> -->
                 </div>
             </div>
         </section>
@@ -105,7 +97,7 @@ font-family: 'Inter', sans-serif;  ">
                     and grow holistically.
                     Join us and take the first step toward your bright future.
                 </p>
-                <div class="highlights" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
+                <div class="highlights" data-aos="zoom-in"  data-aos-duration="1000" data-aos-easing="ease-in-out">
                     <div class="highlight-item">
                         <div class="icon">🧠</div>
                         <h3>Expert Faculty</h3>
@@ -183,7 +175,7 @@ font-family: 'Inter', sans-serif;  ">
             </div>
             <div class="courses-card-container" data-aos="zoom-in" data-aos-duration="1000" data-aos-easing="ease-in-out">
                 <!-- Physics Card -->
-                <div class="course-card">
+                <div class="course-card ">
                     <h2>Physics</h2>
                     <p>Class: 11 & 12</p>
                     <p>Focus: JEE Mains | IIT Preparation | Neet </p>
@@ -191,7 +183,7 @@ font-family: 'Inter', sans-serif;  ">
                 </div>
                 <!-- Chemistry Card -->
                 <div class="course-card">
-                    <h2>Chemistry</h2>
+                    <h2>Chemistry <img src="" alt=""></h2>
                     <p>Class: 11 & 12</p>
                     <p>Focus: JEE Mains | IIT Preparation | Neet </p>
                     <a href="https://www.youtube.com/@AdarshAcademy-4545/playlists" target="_blank" class="button">Learn
@@ -259,17 +251,17 @@ font-family: 'Inter', sans-serif;  ">
                     </div>
                 </div>
                 <!--  biology teacher card -->
-                <div class="faculty-card">
+                <!-- <div class="faculty-card">
                     <div class="card-header">
-                        <img src="./Images/Main-img/Teachers/physics-faculty3.jpg" alt="Deepak Yadav - Physics Teacher">
-                        <h2>Deepak Yadav</h2>
+                        <img src="./Images/Main-img/Teachers/physics-faculty3." alt="Deepak Yadav - Physics Teacher">
+                        <h2></h2>
                         <p>Physics</p>
                     </div>
                     <div class="card-body">
                         <p class="experience">Experience: 6 years</p>
                         <p>I believe in inspiring curiosity and making learning physics an exciting journey.</p>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
 
@@ -309,8 +301,7 @@ font-family: 'Inter', sans-serif;  ">
                             <h3>Get in Touch</h3>
                             <p>Email: <a href="mailto:adarshacademy22@gmail.com">adarshacademy22@gmail.com</a></p>
                             <p>Phone: <a href="tel:+916370339485">+91 6370339485</a></p>
-                            <p>Address: 2nd Floor, City Centre, Club Road, Opposite Gossner College, New Garden Kanke,
-                                Ranchi</p>
+                            <p>Address:Shop no 221,2nd Floor, City centre, Club Rd, opposite Gossner college, New Garden, Kanka, Ranchi, Jharkhand 834001</p>
                         </div>
                         <div class="map">
                             <iframe
@@ -331,8 +322,8 @@ font-family: 'Inter', sans-serif;  ">
             <div class="contact-info">
                 <p><strong>Contact Us</strong></p>
                 <p>Email: <a href="mailto:contact@adarshacademy.com">contact@adarshacademy.com</a></p>
-                <p>Phone: <a href="tel:+1234567890">+123-456-7890</a></p>
-                <p>Address: 123 Main Street, City, Country</p>
+                <p>Phone: <a href="tel:+">+918292720159</a></p>
+                <p>Address:Shop no 221,2nd Floor, City centre, Club Rd, opposite Gossner college, New Garden, Kanka, Ranchi, Jharkhand 834001</p>
             </div>
             <!-- Quick Links Section -->
             <div class="quick-links">
@@ -358,6 +349,9 @@ font-family: 'Inter', sans-serif;  ">
                 <a href="https://youtube.com/@adarshacademy-4545" target="_blank" aria-label="YouTube">
                     <i class="fab fa-youtube"></i>
                 </a>
+                <a href="https://youtube.com/@adarshacademy-4545" target="_blank" aria-label="YouTube">
+                    <i class="fab fa-"></i>
+                </a>
             </div>
 
         </div>
@@ -365,7 +359,7 @@ font-family: 'Inter', sans-serif;  ">
         <!-- Copyright Section in next row -->
         <div class="footer-bottom">
             <div class="copyright">
-                <p>&copy; 2024 by Adarsh Academy. All rights reserved.</p>
+                <p>&copy;  2024 by Adarsh Academy. All rights reserved.</p>
             </div>
             <div class="designer">
                 <p>Designed and developed by <a href="https://www.instagram.com/ashutosh_sahu_00/" target="_blank"
