@@ -9,7 +9,7 @@
 .section-header h1 {
     font-size: 3.5rem;
     font-weight: 700;
-    color:#FFFFFF; /* Dark Red text for main heading */
+    color:#FFFFFF; 
     margin-bottom: 10px;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -17,7 +17,7 @@
 }
 .section-header p {
     font-size: 1.2rem;
-    color: #bbb; /* Subtle gray text */
+    color: #bbb; 
     margin-bottom: 40px;
 }
 .courses-card-container {
@@ -31,7 +31,7 @@
 /* Individual Course Cards */
 .course-card {
     
-    background-color: #1c1c1c; /* Dark charcoal background for course cards */
+    background-color: #1c1c1c; 
     border-radius: 12px;
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
     padding: 20px;
@@ -41,29 +41,18 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
     cursor: pointer;
     margin-bottom: 30px;
-    border: 1px solid #333; /* Slightly darker border */
-    opacity: 0; /* Initially hidden for animation */
-    animation: fadeInUp 0.8s ease-out forwards; /* Fade-in and scale-up animation */
+    border: 1px solid #333; 
+    opacity: 0; 
+    animation: fadeInUp 0.8s ease-out forwards; 
    
 }
 
-/* Fade-in and Scale-up Animation */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: scale(0.8); /* Start smaller and transparent */
-    }
-    100% {
-        opacity: 1;
-        transform: scale(1); /* End at normal size */
-    }
-}
 
-/* Hover effect for course cards */
+
 .course-card:hover {
-    transform: scale(1.05); /* Slight scale-up for hover effect */
+    transform: scale(1.05); 
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
-    /* background-color: #333; Darker background on hover */
+
     transform: translateY(-10px);
     box-shadow: 0px 2px 10px #800000;
 }
@@ -108,18 +97,17 @@
 
 @media (max-width: 1024px) {
     .courses-card-container {
-        gap: 30px; /* Reduce gap between items on smaller screens */
+        gap: 30px; 
     }
     .course-card {
-        width: 90%; /* Adjust width to fit within the row on smaller screens */
-        animation: fadeInUp 0.8s ease-out forwards; /* Fade-in and scale-up for mobile */
-    }
+        width: 90%; 
+        animation: fadeInUp 0.8s ease-out forwards; 
     .course-card p{
         font-size: 16px;
     }
     
 }
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .courses-section {
         padding: 30px 15px;
@@ -140,8 +128,8 @@
     }
 
     .course-card {
-        width: 90%; /* Full width for mobile devices */
-        animation: fadeInUpMobile 0.8s ease-out forwards; /* Fade-in and scale-up for mobile */
+        width: 90%; 
+        animation: fadeInUpMobile 0.8s ease-out forwards;
     }
     .course-card p{
         font-size: 0.8rem;
@@ -149,14 +137,14 @@
     
 }
 
-/* Fade-in and Scale-up Animation for Mobile */
+
 @keyframes fadeInUpMobile {
     0% {
         opacity: 0;
-        transform: scale(0.8); /* Start smaller and transparent */
+        transform: scale(0.8);
     }
     100% {
         opacity: 1;
-        transform: scale(1); /* End at normal size */
+        transform: scale(1); 
     }
 }

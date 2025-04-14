@@ -51,7 +51,7 @@
 }
 
 .feature:hover .feature-icon img {
-    transform: scale(1.1); /* Slight zoom effect on hover */
+    transform: scale(1.1); 
 }
 
 .feature-text {
@@ -69,17 +69,16 @@
 
 @media (max-width: 1024px) {
     .feature {
-        width: 90%;  /* Adjust width to fit within the row on smaller screens */
+        width: 90%;  
     }
     .features {
-        gap: 40px; /* Reduce gap between items on smaller screens */
-    }
+        gap: 40px; 
     .feature-icon img {
-        width: 50px; /* Smaller icon on smaller screens */
+        width: 50px; 
         height: 50px;
     }
     .feature-text {
-        font-size: 40px; /* Smaller text on smaller screens */
+        font-size: 40px; 
     }
 }
 
@@ -95,29 +94,29 @@
     }
 
     .why-heading {
-        font-size: 2rem; /* Slightly smaller font on mobile */
+        font-size: 2rem; 
     }
 
     .why-heading span{
-        font-size: 2rem; /* Slightly smaller font on mobile */
+        font-size: 2rem; 
     }
 
 }
 
 @media (max-width: 480px) {
     /* .why-heading {
-        font-size: 1.5rem; /* Smaller font on very small screens */
+        font-size: 1.5rem; 
     /* } */ 
 
     .feature-icon img {
-        width: 40px; /* Smaller icon on mobile */
+        width: 40px; 
         height: 40px;
     }
 
     .feature {
         width: 90%;
-        flex: 1 1 100%; /* One item per row */
-        /* width: 90%; Full width on smaller screens */
+        flex: 1 1 100%; 
+        /* width: 90%;  */
     }
     .feature-text {
         font-size: 14px; /* Smaller text on mobile */

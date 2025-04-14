@@ -125,9 +125,7 @@
 }
 
 @media (max-width: 768px) {
-    /* .about-section{
-        scroll-margin-top: 190px;
-    } */
+   
     .about-container {
         padding: 30px;
     }
@@ -142,7 +140,7 @@
     }
 
     .highlights {
-        /* flex-direction: column; */
+    
         gap: 20px;
     }
 
@@ -164,10 +162,7 @@
     }
 }
 @media (max-width: 480px) {
-    /* .about-section{
-        scroll-margin-top: 190px;
-    }
-     */
+   
     .about-container h2 {
         font-size: 2rem;
     }

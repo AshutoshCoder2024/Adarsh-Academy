@@ -29,18 +29,6 @@
     text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.5);
 }
 
-/* Keyframes for gradient animation
-@keyframes gradientAnimation {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-} */
 
 /* Card Container */
 .faculty-card-container {
@@ -54,7 +42,7 @@
 
 /* Individual Faculty Cards */
 .faculty-card {
-    background-color: #1e1e2f; /* Dark gray background */
+    background-color: #1e1e2f; 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     overflow: hidden;
@@ -69,7 +57,7 @@
 .faculty-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
-    background: linear-gradient(135deg, #9b1c1c, #1e1e2f); /* Dark red gradient */
+    background: linear-gradient(135deg, #9b1c1c, #1e1e2f); 
 }
 
 /* Card Header (Image and Name) */
@@ -81,12 +69,12 @@
 }
 
 .card-header img {
-    width: 8rem; /* Increased size */
+    width: 8rem; 
     height: 8rem;
     border-radius: 50%;
-    border: 0.rem solid #9b1c1c; /* Dark red border */
+    border: 0.rem solid #9b1c1c; 
     position: absolute;
-    top: 10px; /* Position adjusted */
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     object-fit: cover;
@@ -94,7 +82,7 @@
 }
 
 .card-header h2 {
-    margin: 150px 0 5px; /* Increased top margin to create space below the image */
+    margin: 150px 0 5px; 
     font-size: 1.5rem;
     color: #ffffff;
 }
@@ -102,7 +90,7 @@
 .card-header p {
     margin: 0;
     font-size: 1rem;
-    color: #6c757d; /* Muted gray for subtle contrast */
+    color: #6c757d; 
 }
 
 /* Card Body */
@@ -114,7 +102,7 @@
 
 .card-body p {
     margin: 10px 0;
-    color: #a8b0d0; /* Soft pastel for readability */
+    color: #a8b0d0; 
 }
 
 .card-body .experience {
@@ -124,7 +112,7 @@
 
 /* Optional Gradient Hover Effect */
 .faculty-card:hover {
-    background: linear-gradient(135deg, #9b1c1c, #1e1e2f); /* Dark red gradient on hover */
+    background: linear-gradient(135deg, #9b1c1c, #1e1e2f); 
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 1);
 }
@@ -135,45 +123,45 @@
         justify-content: space-around;
     }
     .faculty-card {
-        width: 80%; /* Adjust card width */
+        width: 80%; 
         margin: 1rem;
     }
 }
 
 @media (max-width: 768px) {
     .faculty-heading {
-        font-size: 2.5rem; /* Smaller heading for tablets */
+        font-size: 2.5rem; 
         padding: 10px 0;
     }
     .card-header img {
-        width: 6rem; /* Smaller image size for tablets */
+        width: 6rem; 
         height: 6rem;
         margin-bottom: 100px;
     }
     .card-header h2 {
-        margin: 100px 0 5px; /* Adjust for smaller screen */
+        margin: 100px 0 5px; 
     }
     .card-body {
-        padding: 20px; /* Reduced padding */
+        padding: 20px; 
     }
 }
 
 @media (max-width: 480px) {
     .faculty-heading {
-        font-size: 2rem; /* Smaller heading for phones */
-        letter-spacing: 2px; /* Reduced spacing */
+        font-size: 2rem; 
+        letter-spacing: 2px; 
     }
     .faculty-card {
-        width: 90%; /* Full width for phones */
+        width: 90%; 
         margin: 1rem 0;
     }
     .card-header img {
-        width: 7rem; /* Smaller image for phones */
+        width: 7rem; 
         height: 7rem;
-        /* margin-bottom: 100px; */
+        
     }
     .card-header h2 {
-        margin: 80px 0 5px; /* Adjust for smaller screens */
+        margin: 80px 0 5px;
         margin-top: 125px;
     }
     .card-header p{

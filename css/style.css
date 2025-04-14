@@ -32,13 +32,13 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-    background: #1e1e1e;  /* Dark track */
+    background: #1e1e1e;  
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #800000;  /* Maroon thumb */
+    background-color: #800000;  
     border-radius: 5px;
-    border: 2px solid #121212;  /* Border to blend with background */
+    border: 2px solid #121212;  
 }
 
 /* For Firefox */
@@ -47,7 +47,7 @@ body {
     scrollbar-color: #800000 #1e1e1e;
 }
 .sub-iocns{
-    color: #800000; /* Maroon color for icons */
-    font-size: 1.5rem; /* Adjust size as needed */
-    margin-right: 10px; /* Space between icon and text */
+    color: #800000; 
+    font-size: 1.5rem; 
+    margin-right: 10px;
 }

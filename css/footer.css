@@ -63,9 +63,9 @@ footer a:hover {
 
 .social-media a {
     color: #ffffff;
-    font-size: 45px; /* Slightly larger icons */
-    margin: 0 25px; /* Spacing between icons */
-    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition */
+    font-size: 45px;
+    margin: 0 25px; 
+    transition: transform 0.3s ease, color 0.3s ease; 
 }
 
 .social-media a:hover {
@@ -76,10 +76,10 @@ footer a:hover {
 /* Copyright Section */
 .copyright {
     font-size: 14px;
-    margin-top: 40px; /* Separate from other sections */
-    border-top: 1px solid #800000; /* Border to separate copyright */
+    margin-top: 40px;
+    border-top: 1px solid #800000; 
     padding-top: 20px;
-    color: #999; /* Lighter color for copyright */
+    color: #999; 
     letter-spacing: 1px;
 }
 
@@ -130,27 +130,27 @@ footer a:hover {
     }
 
     .social-media a {
-        font-size: 50px; /* Larger icons for tablet */
+        font-size: 50px; 
         margin: 0 20px;
     }
 
     .quick-links p {
-        font-size: 20px; /* Adjust font size */
+        font-size: 20px; 
     }
 
     .contact-info p {
-        font-size: 16px; /* Larger font for readability */
+        font-size: 16px;
     }
 
     .quick-links a {
-        font-size: 18px; /* Increase link font size */
+        font-size: 18px; 
     }
 }
 
 /* Mobile Design */
 @media (max-width: 768px) {
     footer {
-        padding: 40px 10px; /* Adjusted padding */
+        padding: 40px 10px; 
     }
 
     .footer-container {
@@ -160,20 +160,20 @@ footer a:hover {
     }
 
     .social-media a {
-        font-size: 50px; /* Icon size for mobile */
-        margin: 0 15px; /* Adjusted icon spacing */
+        font-size: 50px; 
+        margin: 0 15px; 
     }
 
     .quick-links p {
-        font-size: 18px; /* Adjust font size */
+        font-size: 18px;
     }
 
     .quick-links a {
-        font-size: 18px; /* Increased font size */
+        font-size: 18px; 
     }
 
     .contact-info p {
-        font-size: 16px; /* Mobile-friendly font size */
+        font-size: 16px; 
     }
 
     .copyright {
