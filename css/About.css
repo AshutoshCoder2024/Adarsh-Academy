@@ -1,5 +1,6 @@
 /* About Section */
 #about {
+    margin-top: -50px;
     padding: 60px 20px;
     background:  rgb(20, 20, 20); 
     color: #ffffff; 
@@ -68,7 +69,8 @@
 .highlight-item h3 {
     font-size:1.5rem;
     margin-bottom: 10px;
-    color:  #e60000; 
+    /* color:  #e60000;  */
+    color: #ffffff; 
 }
 
 .highlight-item p {
