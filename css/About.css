@@ -1,6 +1,5 @@
 /* About Section */
 #about {
-    margin-top: -50px;
     padding: 60px 20px;
     background:  rgb(20, 20, 20); 
     color: #ffffff; 
@@ -11,6 +10,7 @@
 }
 .about-section{
     scroll-margin-top: 100px;
+    margin-top: -50px;
 }
 .about-container {
     margin-top: 27px;
