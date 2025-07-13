@@ -1,3 +1,4 @@
+
 .courses-section {
     scroll-margin-top: 90px;
     background-color: #121212; 
@@ -42,7 +43,7 @@
     cursor: pointer;
     margin-bottom: 30px;
     border: 1px solid #333; 
-    opacity: 0; 
+    opacity: 1; 
     animation: fadeInUp 0.8s ease-out forwards; 
    
 }
@@ -102,10 +103,10 @@
     .course-card {
         width: 90%; 
         animation: fadeInUp 0.8s ease-out forwards; 
-    .course-card p{
+    }
+    .course-card p {
         font-size: 16px;
     }
-    
 }
 
 @media (max-width: 768px) {
