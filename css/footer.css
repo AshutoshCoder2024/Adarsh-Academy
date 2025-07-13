@@ -7,7 +7,7 @@ footer {
     box-shadow: 0 -2px 15px rgba(0, 0, 0, 0.1); 
 }
 .footer-container {
-    max-width: 1200px;
+    max-width:100%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -101,6 +101,7 @@ footer a:hover {
 .contact-info {
     margin-bottom: 20px;
     color: #ffffff  ;
+    margin-right: -10px;
 }
 
 .contact-info a {
@@ -147,7 +148,7 @@ footer a:hover {
     }
 }
 
-/* Mobile Design */
+
 @media (max-width: 768px) {
     footer {
         padding: 40px 10px; 

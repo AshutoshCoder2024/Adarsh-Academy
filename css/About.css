@@ -13,7 +13,7 @@
 }
 .about-container {
     margin-top: 27px;
-    max-width: 100vw;
+    max-width: 100%;
     background-color: #121212;
     padding: 40px;
     text-align: center;     
@@ -46,7 +46,7 @@
     background: #1a1a1a; 
     padding: 20px;
     overflow: hidden;
-    width: 300px;
+    width: 290px;
     border-radius: 10px;
     text-align: center;
     justify-content: center;

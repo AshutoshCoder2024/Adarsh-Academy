@@ -46,7 +46,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
     overflow: hidden;
-    width: 290px;
+    width: 280px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     margin: 2rem;
@@ -123,7 +123,7 @@
         justify-content: space-around;
     }
     .faculty-card {
-        width: 80%; 
+        width: 90%; 
         margin: 1rem;
     }
 }
@@ -152,7 +152,7 @@
         letter-spacing: 2px; 
     }
     .faculty-card {
-        width: 90%; 
+        width: 85%; 
         margin: 1rem 0;
     }
     .card-header img {
